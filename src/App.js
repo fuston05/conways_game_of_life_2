@@ -1,12 +1,14 @@
 import React from 'react';
+
+// styles
+
 //components
-import {Navigation} from './Navigation';
+import {Header} from './components';
 
 function App() {
   return (
     <div className="App">
-      <h1>Conway's Game of Life</h1>
-      <Navigation />
+      <Header />
     </div>
   );
 }

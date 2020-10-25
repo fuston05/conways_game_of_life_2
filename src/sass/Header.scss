@@ -1,0 +1,20 @@
+// Header styles
+header{
+  width: 100%;
+  @include dFlex(column, center, center);
+
+  .headerTop{
+    width: 100%;
+    @include dFlex(row, space-evenly, center);
+
+    .menuIcon{
+      font-size: 2.4rem;
+      color: #555;
+    }
+  }
+
+  .headerBottom{
+    width: 100%;
+    @include dFlex(row, flex-end, center)
+  }
+}

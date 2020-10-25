@@ -1,33 +1,41 @@
-@import './reset.scss';
-@import './vars.scss';
-@import './mix-ins.scss';
+@import "./reset.scss";
+@import "./vars.scss";
+@import "./mix-ins.scss";
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   max-width: 100%;
   overflow: hidden;
 }
 
-p{
+p {
   color: $pColor;
   font-size: $pSize;
 }
 
-a{
+a {
   color: $aColor;
   font-size: $aSize;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
 }
 
-h1{
+hr{
+  text-align: center;
+  margin: 3% auto;
+  border: 1px solid #aaa;
+  width: 90%;
+  outline: none;
+}
+
+h1 {
   color: $h1Color;
   font-size: $h1Size;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
 }
 
 h2 {
@@ -52,23 +60,21 @@ h5 {
 
 // form styles //
 
-input{
+input {
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #aaa;
   font-size: $pSize;
   color: $pColor;
-
 }
 
-form{
-
-  label{
+form {
+  label {
     font-size: $pSize;
     color: $labelColor;
   }
+} //end form
 
-  button{
-    @include buttonStyles;
-  }//end button
-}//end form
+button {
+  @include buttonStyles;
+} //end button
