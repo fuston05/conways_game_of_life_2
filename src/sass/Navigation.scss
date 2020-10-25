@@ -1,0 +1,42 @@
+// navigation styles
+nav{
+  @include dFlex(column, center, center);
+  border: 1px solid #ddd;
+  padding: 1%;
+  width: 60%;
+  z-index: 2;
+
+  ul{
+    width: 100%;
+
+    li{
+      width: 100%;
+
+      button{
+        @include dFlex(column, center, flex-start);
+        border: none;
+        width: 100%;
+        padding-left: 5%;
+      }
+    }
+
+    .colorPickers{
+      @include dFlex(column, center, center);
+      font-size: $pSize;
+
+      li{
+        margin-bottom: 5px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        .colors{
+          height: 50px;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
