@@ -1,0 +1,24 @@
+@import './vars.scss';
+
+// mix-ins
+
+@mixin dFlex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+//end dFlex
+
+@mixin buttonStyles {
+    padding: 4% 0;
+    font-size: $pSize;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+//end buttonStyles
